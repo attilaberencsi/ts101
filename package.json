@@ -1,0 +1,25 @@
+{
+  "name": "ts101",
+  "version": "1.0.0",
+  "description": "SAP Full Stack Development - TypeScript 101",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/attilaberencsi/ts101.git"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "author": "Attila Berencsi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/attilaberencsi/ts101/issues"
+  },
+  "homepage": "https://github.com/attilaberencsi/ts101#readme",
+  "dependencies": {
+    "typescript": "^5.2.2"
+  }
+}

@@ -39,7 +39,40 @@ class MathUtil {
 let PI = MathUtil.PI;
 let result = MathUtil.square(3);
 
-// Intersection type
+type Programmer = {
+    name: string;
+    knownFor: string[];
+};
+
+type Consultant = {
+    name: string[];
+    skills: string[];
+};
+
+type User = {
+    name: string[];
+    apps: string[];
+};
+
+// UNION and INTERSECTION
+// Whether an intersection or a union type is used, the order in which the individual types are defined is irrelevant.
+
+// Intersection type: merging two or more different types into a new type
+// but the type of the properties with identical name must match, see
+// https://stackoverflow.com/questions/42735611/why-can-intersection-types-contain-conflicting-types
+type ProgCons = Consultant & Programmer;
+
+// Wrong, due above explanation
+/* 
+const technoFunc: ProgCons = {
+    name: ["Pappa"],
+    knownFor: ['Music'],
+    skills: ['DJing']
+}; */
+
+// Good, due above explanation
+type ConsUser = Consultant & User;
 
 
-// Union type
+// Union type: used to define that a value can be any one of several types 
+type ProgORCons = Consultant | Programmer;

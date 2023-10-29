@@ -29,5 +29,3 @@ class MathUtil {
 MathUtil.PI = 3.141592;
 let PI = MathUtil.PI;
 let result = MathUtil.square(3);
-// Intersection type
-// Union type

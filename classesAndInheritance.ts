@@ -1,3 +1,5 @@
+// Classes represent the structure of an object as well as its functions
+
 /**
  * Super class
  */
@@ -10,10 +12,6 @@ class Vehicle {
     }
     getBrand(): string {
         return this.brand;
-    }
-
-    protected getHi(){
-        return 'Hi';
     }
 }
 
@@ -34,10 +32,14 @@ class Car extends Vehicle {
 }
 
 /**
- * Abstract class defines what is to be done with a signature
+ * Abstract members define what is to be done with a signature
  */
 abstract class Candy {
     abstract sugarAmount(): number;
+
+    protected getHi() {
+        return 'Hi';
+    }
 }
 
 /**
